@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-function Counter() {
+export function Counter() {
     const [count, setCount] = useState(0);
     useEffect(() => {
         document.title = `You clicked ${count} times`;
     })
-    function handleRight(e) {
+    function handleRight(e: { preventDefault: () => void; }) {
         e.preventDefault();
         setCount((count) => count - 1);
     }
@@ -15,5 +15,3 @@ function Counter() {
         </button>
     );
 }
-
-export default Counter;

@@ -1,0 +1,12 @@
+.NavBar {
+    width: 100%;
+    display: flex;
+    background: #fb0000;
+    margin-top: 0px;
+}
+
+.NavBar > Link {
+    width: 100%;
+    display: flex;
+    margin: 100;
+}
